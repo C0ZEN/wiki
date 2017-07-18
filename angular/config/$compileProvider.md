@@ -14,7 +14,8 @@ It can helps to debug the DOM by adding some stuff in it like:
 
 - `ng-binding` CSS class
 - `$binding` data property containing an array of the binding expressions
-- Hide some comments like `ng-if`
+- `ngBind` and `ngBindHtml` attributes
+- `ng-if` comments
 
 Obviously, this option will slow down the application and it is useless in production.  
 So, **disable** it !
