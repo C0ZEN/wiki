@@ -20,10 +20,6 @@ A better solution is to use an anonymous function like `function () {}`.
 
 angular.noop
 
-### Want more ?
-
-[See the official documentation](https://docs.angularjs.org/api/ng/function/angular.noop)
-
 ### Example
 
 **Declaration:**
@@ -57,3 +53,7 @@ function aSimpleFunction (callback) {
    angular.isFunction(callback) ? callback() : null;
 }
 ```
+
+### Want more ?
+
+[See the official documentation](https://docs.angularjs.org/api/ng/function/angular.noop)
