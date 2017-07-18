@@ -16,8 +16,7 @@ myArray.forEach(function(element, index, array) {
 
 **How's that better ?**
 
-Because it can loop through objects, too !
-
+Because it can loop through objects, too !  
 By this simple fact, it makes it **better**.
 
 Moreover, because it filters object's keys with `hasOwnProperty` automatically !
