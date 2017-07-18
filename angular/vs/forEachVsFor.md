@@ -49,6 +49,13 @@ It's the equivalent to use `break` then `return`.
 
 You can use at your advantage the reverse loop (from end to start, usually when you need to remove elements and continue the loop).
 
+### Conclusion
+
+When you work with arrays, you should use the **for loop** because it's very fast.  
+You can increase the speed by using `break` and `return` when you found what you were looking for.
+
+When you work with objects, use the **forEach**.
+
 ### Bonus
 
 You should never recalculate the condition in the **for loop**.
@@ -69,6 +76,21 @@ for (var i = 0; i < myArray.length; i++) {
 ```
 var myArray = [0, 0, 0];
 for (var i = 0, length = myArray.length; i < length; i++) {
+
+   // ...
+
+}
+```
+
+Save the current item in a variable to make the **for loop** more readable.
+
+**Example:**
+
+```
+var myArray = [0, 0, 0];
+var currentElement;
+for (var i = 0, length = myArray.length; i < length; i++) {
+   currentElement = myArray[i];
 
    // ...
 
