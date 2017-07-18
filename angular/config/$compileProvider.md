@@ -12,7 +12,7 @@ You should always enable it on development and disable it on production.
 
 It can helps to debug the DOM by adding some stuff in it like:
 
-- `ng-binding` CSS class
+- `ng-binding`, `ng-scope` and `ng-isolated-scope` CSS class
 - `$binding` data property containing an array of the binding expressions
 - `ngBind` and `ngBindHtml` attributes
 - `ng-if` comments
