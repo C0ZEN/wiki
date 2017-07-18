@@ -88,8 +88,7 @@ Save the current item in a variable to make the **for loop** more readable.
 
 ```
 var myArray = [0, 0, 0];
-var currentElement;
-for (var i = 0, length = myArray.length; i < length; i++) {
+for (var i = 0, length = myArray.length, currentElement; i < length; i++) {
    currentElement = myArray[i];
 
    // ...
