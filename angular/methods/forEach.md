@@ -24,10 +24,6 @@ Moreover, because it filters object's keys with `hasOwnProperty` automatically !
 
 It feels safe and sounds great.
 
-### Want more ?
-
-[See the official documentation](https://docs.angularjs.org/api/ng/function/angular.forEach)
-
 ### Example
 
 ```
@@ -37,3 +33,7 @@ angular.forEach(elements, function(element, key) {
   
 }, context);
 ```
+
+### Want more ?
+
+[See the official documentation](https://docs.angularjs.org/api/ng/function/angular.forEach)
