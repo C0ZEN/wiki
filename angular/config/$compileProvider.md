@@ -26,6 +26,11 @@ So, **disable** it !
 $compileProvider.debugInfoEnabled(false);
 ```
 
+### Bonus
+
+If you want to debug easily a production which have this option disable,  
+You can enter `angular.reloadWithDebugInfo();` in your browser console to enable the debug.
+
 ### Want more ?
 
 [See the official documentation](https://docs.angularjs.org/api/ng/provider/$compileProvider)
