@@ -54,6 +54,8 @@ function aSimpleFunction (callback) {
 }
 ```
 
+**Note:** [check out](isFunction.md) to know more about it.
+
 ### Want more ?
 
 [See the official documentation](https://docs.angularjs.org/api/ng/function/angular.noop)
