@@ -25,9 +25,7 @@ for (var i = 0, length = 10; i < length; i++) {
 }
 ```
 
-### forEach
-
-**Advantages:**
+### forEach: advantages
 
 You can loop through arrays and objects.  
 **for loop** is only for arrays.
@@ -36,9 +34,7 @@ You can access easily to the `key` and `value`.
 
 The code syntax is more appropriate to read it.
 
-### for
-
-**Advantages:**
+### for: advantages
 
 The **for loop** is the fastest way to loop through an array.  
 Far better than **forEach**.
