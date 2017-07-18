@@ -54,7 +54,7 @@ function aSimpleFunction (callback) {
 }
 ```
 
-**Note:** [check out](isFunction.md) to know more about it.
+**Note:** check out [isFunction](isFunction.md) to know more about it.
 
 ### Want more ?
 
