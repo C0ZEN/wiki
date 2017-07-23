@@ -85,7 +85,7 @@ You didn't use the correct syntax, you are at the end of the project, and you ne
 
 That could be a long and not funny way to refacto your code to avoid the mess.  
 
-So, take a look at this [substitute solution](../../grunt/uglify.md).
+So, take a look at this [substitute solution](../../grunt/uglify.md#fix-injection-error).
 
 ### Want more ?
 
