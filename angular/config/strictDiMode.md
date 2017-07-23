@@ -5,9 +5,9 @@
 This option will ensure that all of you angular stuff is annoted to avoid error.  
 You really should enable it when planning to use minification.
 
-**Description:**
-
 You just have to put this attribute on the `ng-app` of your application.
+
+**Note:** do not use it in production, you could save some time on first load. 
 
 ### Example
 
