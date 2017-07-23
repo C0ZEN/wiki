@@ -79,6 +79,14 @@ The syntax with `$inject` is exactly the same.
 })
 ```
 
+### Substitute solution
+
+You didn't use the correct syntax, you are at the end of the project, and you need to minify your code ?
+
+That could be a long and not funny way to refacto your code to avoid the mess.  
+
+So, take a look at this [substitute solution](../../grunt/uglify.md).
+
 ### Want more ?
 
 [See the official documentation](https://docs.angularjs.org/guide/di#using-strict-dependency-injection)
