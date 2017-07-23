@@ -22,10 +22,20 @@ You just have to put this attribute on the `ng-app` of your application.
 
 ### Coverage
 
-You need to explicit your dependencies in:
+You need to inject your dependencies everywhere.  
+It is very important to do it from the start of the project.
+
+For example, you must include the depencencies in:
 
 - Controllers
-- Resolve object in the States
+- Services and Factories
+- Directives
+- Filters
+- ...
+
+The syntax with `$inject` is exactly the same.
+
+**Note:** you must also include the dependencies into the resolve of the ui-states (array like).
 
 ### Controller injection
 
