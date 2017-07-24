@@ -1,3 +1,9 @@
+# Notify and subscribe
+
+### About ?
+
+This part is a pure custom way to manage listener in my services and factories.
+
 // Subscribe to the notify on this factory for the user
 function subscribe(scope, callback) {
     var handler = $rootScope.$on('usersFactoryUserChanged', callback);
