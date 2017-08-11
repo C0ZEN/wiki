@@ -73,8 +73,8 @@ scope.$on('$destroy', destroy);
 // Destroy all of them
 function destroy() {
   angular.forEach(intervals, function (interval) {
-	  interval();
-	});
+	  $interval.cancel(interval);
+  });
 }
 ```
 
