@@ -87,7 +87,7 @@ Just never forget to remove the listeners after an add.
 
 ```
 // Add the listeners
-$window.addEventListener('myEvent, angular.noop);
+$window.addEventListener('myEvent', angular.noop);
 
 // Watch for scope destruction event
 scope.$on('$destroy', destroy);
@@ -95,6 +95,6 @@ scope.$on('$destroy', destroy);
 // Function to loop throught the listeners array
 // Destroy all of them
 function destroy() {
-  $window.removeEventListener('myEvent, angular.noop);
+  $window.removeEventListener('myEvent', angular.noop);
 }
 ```
