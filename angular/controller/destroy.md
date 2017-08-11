@@ -69,7 +69,7 @@ intervals.push($scope.$interval(angular.noop));
 // Watch for scope destruction event
 scope.$on('$destroy', destroy);
 
-// Function to loop throught the listeners array
+// Function to loop through the listeners array
 // Destroy all of them
 function destroy() {
   angular.forEach(intervals, function (interval) {
@@ -92,7 +92,7 @@ $window.addEventListener('myEvent', angular.noop);
 // Watch for scope destruction event
 scope.$on('$destroy', destroy);
 
-// Function to loop throught the listeners array
+// Function to loop through the listeners array
 // Destroy all of them
 function destroy() {
   $window.removeEventListener('myEvent', angular.noop);
