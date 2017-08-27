@@ -20,8 +20,12 @@ The base should be very solid, so, take a look at the syntax, I think it's a goo
  *
  * @description
  *
- * [Scope params]
- * @param {string} cozenBtnLabel > Label [@, translate]
+ * [Scope params, one-way binding]
+ * @param {string} cozenBtnLabel > Label [translate]
+ * 
+ * [Scope params, two-way binding]
+ * 
+ * [Attrs params]
  *
  */
 (function (angular) {
