@@ -22,10 +22,11 @@ The base should be very solid, so, take a look at the syntax, I think it's a goo
  *
  * [Scope params, one-way binding]
  * @param {string} cozenBtnLabel > Label [translate]
- * 
+ *
  * [Scope params, two-way binding]
- * 
+ *
  * [Attrs params]
+ * @param {function} cozenBtnOnClick > Callback function called on click
  *
  */
 (function (angular) {
@@ -79,7 +80,6 @@ The base should be very solid, so, take a look at the syntax, I think it's a goo
     }
 
 })(window.angular);
-
 ```
 
 ### Controller
@@ -95,28 +95,37 @@ The base should be very solid, so, take a look at the syntax, I think it's a goo
         .module('capricieuseApp')
         .controller('cozenBtnController', cozenBtnController);
 
-    cozenBtnController.$inject = [];
+    cozenBtnController.$inject = [
+        'logsService',
+        '$scope',
+        '$attrs',
+        'config'
+    ];
 
-    function cozenBtnController() {
+    function cozenBtnController(logsService, $scope, $attrs, config) {
         var vm = this;
 
         // Common data
         vm.data = {
             controller: 'cozenBtnController',
             directive : 'cozenBtn',
-            listeners : []
+            listeners : [],
+            debug     : config.directives.btn.debug
         };
 
         // Public methods
         vm.methods = {
-            onClickBtn: onClickBtn
+            onClick: onClick
         };
 
-        function onClickBtn($event) {
+        function onClick($event) {
+            if (vm.data.debug) {
+                logsService.info.functionCalled(vm.data.controller, 'onClick');
+            }
             $event.stopPropagation();
+            $scope.$eval($attrs.cozenBtnOnClick);
         }
     }
 
 })(window.angular, document);
-
 ```
