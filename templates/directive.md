@@ -24,9 +24,10 @@ The base should be very solid, so, take a look at the syntax, I think it's a goo
  * @param {string} cozenBtnLabel > Label [translate]
  *
  * [Scope params, two-way binding]
+ * @param {function} cozenBtnOnClick > Callback function called on click
  *
  * [Attrs params]
- * @param {function} cozenBtnOnClick > Callback function called on click
+ *
  *
  */
 (function (angular) {
@@ -45,7 +46,8 @@ The base should be very solid, so, take a look at the syntax, I think it's a goo
             replace         : false,
             transclude      : false,
             scope           : {
-                cozenBtnLabel: '@'
+                cozenBtnLabel  : '@',
+                cozenBtnOnClick: '&'
             },
             templateUrl     : 'scripts/directives/ui/btn/btn.template.html',
             controller      : 'cozenBtnController',
@@ -97,12 +99,10 @@ The base should be very solid, so, take a look at the syntax, I think it's a goo
 
     cozenBtnController.$inject = [
         'logsService',
-        '$scope',
-        '$attrs',
         'config'
     ];
 
-    function cozenBtnController(logsService, $scope, $attrs, config) {
+    function cozenBtnController(logsService, config) {
         var vm = this;
 
         // Common data
@@ -119,11 +119,9 @@ The base should be very solid, so, take a look at the syntax, I think it's a goo
         };
 
         function onClick($event) {
-            if (vm.data.debug) {
-                logsService.info.functionCalled(vm.data.controller, 'onClick');
-            }
+            logsService.info.functionCalled(vm.data.controller, 'onClick', vm.data.debug);
             $event.stopPropagation();
-            $scope.$eval($attrs.cozenBtnOnClick);
+            vm.cozenBtnOnClick();
         }
     }
 
