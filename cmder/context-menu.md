@@ -1,7 +1,5 @@
 # How to add cmder to your context menu
 
-**Reminder :**
-
 The context menu is the windows menu opened on right click in a folder.  
 
 ### Solution
