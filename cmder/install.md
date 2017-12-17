@@ -13,3 +13,8 @@ You should download the full version even if you have already installed Git for 
 First, unzip the package.  
 Then you can cut and paste the unziped folder anywhere on your computer.  
 Recommended on typical HDD instead of your main SSD.
+
+### Next
+
+You should add the cmder as shortcut in your context menu.  
+Follow this [guide](context-menu.md) to make it works.
