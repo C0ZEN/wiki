@@ -18,3 +18,5 @@ Recommended on typical HDD instead of your main SSD.
 
 You should add the cmder as shortcut in your context menu.  
 Follow this [guide](context-menu.md) to make it works.
+
+If you are a JetBrains addict, you can follow this [guide](replace-webstorm-cmd.md) to change the cmd by cmder.
