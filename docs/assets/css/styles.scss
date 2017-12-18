@@ -1,0 +1,51 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// Colors
+$atom-purple: #9C27B0;
+$atom-purple-hover: #B92ED1;
+$atom-blue: #2C9FDD;
+$atom-blue-hover: #2C9FDD;
+$atom-green: #4AC291;
+$atom-green-hover: #66CCA3;
+
+// Override the green of the cayman
+.main-content h1, 
+.main-content h2, 
+.main-content h3, 
+.main-content h4, 
+.main-content h5, 
+.main-content h6 {
+	color: $atom-green;
+}
+
+// Change the color hover the btn
+.btn.btn-green {
+	margin-top: 1rem;
+	background-color: $atom-green;
+	&:hover {
+		background-color: $atom-green-hover;
+	}
+}
+
+// Change the color of the header
+.page-header {
+ 	background-color: $atom-blue;
+   	background-image: linear-gradient(120deg, $atom-blue, $atom-green);
+}
+
+// Change the color of a link
+a {
+	color: $atom-blue;
+	&:hover {
+		color: $atom-blue-hover;
+	}
+}
+
+// Vertical line
+.atom-vertical-line {
+	padding-left: 8px;
+	border-left: 2px solid $atom-green;
+}
