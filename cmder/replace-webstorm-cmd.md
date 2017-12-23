@@ -4,7 +4,9 @@ This is far better option that the actual cmd.
 
 **Notes :** 
 
-There is a problem when the cmd is opened the path is not the one of your current project.  
+There is a problem when the cmd is opened.  
+Occurs only when the project is on another disk.  
+The path is not the one of your current project.  
 You should always `cd` to set the correct path.  
 
 **To shortcut the process :**
@@ -13,7 +15,10 @@ You should always `cd` to set the correct path.
 - Right-click on the first line (which is the path of your package.json)
 - Left-click on `copy path`
 - Open the cmd
-- `cd ` + `CTRL + V`
+- Go to your project disk like `g:`
+- `cd ` + `CTRL + V` to set the new path
+- `CTRL + Z` to remove `package.json` end string
+- `Enter` and you are good to go
 
 ### Set the environment variable
 
