@@ -32,6 +32,8 @@
       - [Avoid blur](css/animation/avoidBlur.md)
    - Text
       - [Limit lines](css/text/limitLines.md)
+   - IE
+      - [Fix](css/ie/fix.md)
 - Git
    - Sourcetree
       - [Push error](git/sourcetree/push-error.md)
