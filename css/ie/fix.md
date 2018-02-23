@@ -7,7 +7,9 @@
 Always use `transparent` instead of `inherit` for the `background-color` property.
 
 ```css
-background-color: transparent;
+element {
+  background-color: transparent;
+}
 ```
 
 ## IE 11
