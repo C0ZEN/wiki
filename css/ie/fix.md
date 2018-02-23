@@ -16,7 +16,7 @@ element {
 
 ## IE 11
 
-### Min-height on flex-items aligns center
+### Min-height on flex-container with aligns center
 
 When a container is flexible, align items on center and has a min-height, IE will not vertically center the children.  
 To fix this behavior, instead of setting a min-height, set a height and a min-height with max-content value.
