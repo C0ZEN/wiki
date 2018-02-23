@@ -1,6 +1,6 @@
 # IE Fix
 
-You can find a bunch of solutions for Flex error on [Flexbugs](https://github.com/philipwalton/flexbugs)
+You can find a bunch of solutions for Flex error on [Flexbugs](https://github.com/philipwalton/flexbugs).
 
 ## All versions
 
