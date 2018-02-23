@@ -1,6 +1,8 @@
 # IE Fix
 
-### All versions
+## All versions
+
+### Background-color inherit
 
 Always use `transparent` instead of `inherit` for the `background-color` property.
 
@@ -8,8 +10,24 @@ Always use `transparent` instead of `inherit` for the `background-color` propert
 background-color: transparent;
 ```
 
-### IE 11
+## IE 11
 
-### IE 10
+### Min-height on flex-items aligns center
 
-### IE 9
+When a container is flexible, align items on center and has a min-height, IE will not vertically center the children.  
+To fix this behavior, instead of setting a min-height, set a height and a min-height with max-content value.
+
+```css
+.container {
+  display        : flex;
+  flex-direction : row;
+  justify-content: flex-start;
+  align-items    : center;
+  height         : 4rem;
+  min-height     : max-content;
+}
+```
+
+## IE 10
+
+## IE 9
