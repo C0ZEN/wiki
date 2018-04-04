@@ -20,7 +20,7 @@ You should use a seed like [Angular Seed](https://github.com/angular/angular-see
 Install the Angular CLI:
 
 ```
-npm install -g @angular/cli`
+npm install -g @angular/cli
 ```
 
 Then create your new project:
