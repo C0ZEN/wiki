@@ -19,6 +19,8 @@
       - [Notify](angular/factory/notify.md)
       - [Subscribe](angular/factory/subscribe.md)
    - Methods
+   - Scaffolding
+      - [Library](angular/scaffolding/library.md)
    - Vs
       - [ForEach Vs For](angular/vs/forEachVsFor.md)
 - Chocolatey
