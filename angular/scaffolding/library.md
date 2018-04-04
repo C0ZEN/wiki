@@ -73,4 +73,6 @@ WebStorm will automatically search the corresponding configuration file.
 
 **Using SASS**
 
-As a Front-End developer, I did not encourage you to still 
+As a Front-End developer, I did not encourage you to use CSS.  
+Instead you should use a preprocessor like SASS, LESS or Stylus.  
+Since SASS is already installed with the Angular CLI
