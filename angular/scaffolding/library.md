@@ -60,7 +60,9 @@ Copy this [sample](.stylelintrc) if you want a prebuild linter.
 
 Then install the package:
 
-`npm install stylelint --save-dev`
+```
+npm install stylelint --save-dev
+```
 
 **Using WebStorm**
 
