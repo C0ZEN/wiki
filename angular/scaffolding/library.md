@@ -64,6 +64,21 @@ Then install the package:
 npm install stylelint --save-dev
 ```
 
+**Standard rules**
+
+Instead of creating my own rules from scratch, I use a standard one.  
+You should install it:
+
+```
+npm install stylelint-config-standard --save-dev
+```
+
+**Ignore**
+
+To avoid watching and analyzing useless files, like minified ones or bundles ones, you can simply ignore them.  
+Create a `.stylelintignore` file on the root folder.  
+Copy this [sample](.stylelintignore) if you want a prebuild StyleLint ignore.
+
 **Using WebStorm**
 
 You should enable the live StyleLint from WebStorm settings to ensure that the linter is always working and help you coding safer and faster.  
