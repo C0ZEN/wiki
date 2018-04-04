@@ -75,4 +75,5 @@ WebStorm will automatically search the corresponding configuration file.
 
 As a Front-End developer, I did not encourage you to use CSS.  
 Instead you should use a preprocessor like SASS, LESS or Stylus.  
-Since SASS is already installed with the Angular CLI
+Since SASS is already installed with the Angular CLI, I recommand his usage.  
+Copy this [sample](.stylelintrc-sass) if you want a prebuild linter using SASS.
