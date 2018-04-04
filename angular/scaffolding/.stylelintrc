@@ -1,0 +1,24 @@
+{
+	"extends": [
+		"stylelint-config-standard"
+	],
+	"plugins": [
+		"stylelint-scss"
+	],
+	"rules": {
+		"indentation": "tab",
+		"string-quotes": "single",
+		"selector-attribute-quotes": "never",
+		"function-url-quotes": "never",
+		"font-family-name-quotes": "always-unless-keyword",
+		"at-rule-no-vendor-prefix": null,
+		"media-feature-name-no-vendor-prefix": null,
+		"property-no-vendor-prefix": null,
+		"selector-no-vendor-prefix": null,
+		"value-no-vendor-prefix": null,
+		"max-nesting-depth": 8,
+		"selector-max-compound-selectors": 8,
+		"color-named": "never",
+		"color-no-hex": null
+	}
+}
