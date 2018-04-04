@@ -13,7 +13,23 @@
 
 ### Seed
 
-You should use a seed like [Angular Seed](https://github.com/angular/angular-seed) or at least the [Angular CLI](https://github.com/angular/angular-cli) to create the scaffolding of the application. 
+You should use a seed like [Angular Seed](https://github.com/angular/angular-seed) or at least the [Angular CLI](https://github.com/angular/angular-cli) to create the scaffolding of the application.  
+
+**Example**
+
+Install the Angular CLI:
+
+```
+npm install -g @angular/cli`
+```
+
+Then create your new project:
+
+```
+ng new PROJECT-NAME
+cd PROJECT-NAME
+ng serve
+```
 
 ## Linters
 
@@ -25,7 +41,9 @@ Copy this [sample](tslint.json) if you want a prebuild linter.
 
 Then install the package if it is not installed yet:
 
-`npm install tslint --save-dev`
+```
+npm install tslint --save-dev
+```
 
 **Using WebStorm**
 
