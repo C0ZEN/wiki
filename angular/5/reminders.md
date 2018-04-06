@@ -82,7 +82,7 @@ __Template__
 __Component__
 
 ```
-@Output() public clickEvent = new EventEmitter<string>();
+@Output() public clickEvent: EventEmitter<any> = new EventEmitter();
 
 public onClick() {
   this.clickEvent.emit('anything');
