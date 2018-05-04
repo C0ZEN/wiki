@@ -15,7 +15,7 @@ To fix it, you must use the fakeAsync syntax with a tick and wait for stable fix
 
 Example:
 
-```
+```javascript
 it('should do ...', fakeAsync(() => {
 
   // Do some stuff here
