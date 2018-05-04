@@ -44,3 +44,28 @@ it('should ...', () => {
 });
 ```
 
+## How to test an event in a directive
+
+Check out this example where we want to `preventDefault()` on the event.
+
+```javascript
+@HostListener('click', ['$event'])
+public onClick(event: any): void {
+  event.preventDefault();
+}
+```
+
+To test it, you must create your own directive and event objects.  
+Then spy on the event's `preventDefault()` method.  
+Simulate the HostListener and finally expect the call.
+
+```javascript
+it('should prevent default on event', () => {
+  const directive: ExampleDirective = new ExampleDirective();
+  const clickEvent: MouseEvent = new MouseEvent('click', null);
+  spyOn(clickEvent, 'preventDefault');
+  fixture.detectChanges();
+  directive.onClick(clickEvent);
+  expect(clickEvent.preventDefault).toHaveBeenCalled();
+}
+```
