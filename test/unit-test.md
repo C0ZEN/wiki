@@ -26,3 +26,18 @@ it('should do ...', fakeAsync(() => {
   });
 }));
 ```
+
+## Testing private methods
+
+No, you can't.
+
+## Spying private methods calls
+
+```javascript
+it('should ...', () => {
+  const spy: Spy = spyOn<any>(component, 'privateMethod');
+  component.ngOnInit();
+  expect(spy).toHaveBeenCalled();
+});
+```
+
