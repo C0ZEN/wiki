@@ -33,7 +33,7 @@ No, you can't.
 
 ## Spying private methods call
 
-Use the spyOn<any> syntax and save the Spy in a variable.  
+Use the `spyOn<any>` syntax and save the Spy in a variable.  
 The expectation should be directly the Spy.
 
 ```javascript
