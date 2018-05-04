@@ -13,8 +13,6 @@ Remove this option from the `ng test` command.
 
 To fix it, you must use the fakeAsync syntax with a tick and wait for stable fixture.
 
-Example:
-
 ```javascript
 it('should do ...', fakeAsync(() => {
 
