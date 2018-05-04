@@ -31,7 +31,7 @@ it('should do ...', fakeAsync(() => {
 
 No, you can't.
 
-## Spying private methods calls
+## Spying private methods call
 
 ```javascript
 it('should ...', () => {
