@@ -1,4 +1,4 @@
-# angular-wiki
+# Wiki
 
  Just a bunch of stuff about Front-End stuff to help me (and maybe you) to have access to good pratices, reminders and snippet.
 
