@@ -33,6 +33,9 @@ No, you can't.
 
 ## Spying private methods call
 
+Use the spyOn<any> syntax and save the Spy in a variable.  
+The expectation should be directly the Spy.
+
 ```javascript
 it('should ...', () => {
   const spy: Spy = spyOn<any>(component, 'privateMethod');
