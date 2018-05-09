@@ -75,10 +75,10 @@ it('should prevent default on event', () => {
 In this example, we will test that the @Output `outputOnClick` emit correctly when `onClick()` is called.
 
 ```javascript
-it(should emit', () => {
-		let hasSubscribe: boolean = false;
-		component.outputOnClick.subscribe(() => hasSubscribe = true);
-		component.onClick();
-		expect(hasSubscribe).toBe(true);
-	});
+it('should emit', () => {
+  let hasSubscribe: boolean = false;
+  component.outputOnClick.subscribe(() => hasSubscribe = true);
+  component.onClick();
+  expect(hasSubscribe).toBe(true);
+});
 ```
