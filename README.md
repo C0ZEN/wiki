@@ -45,6 +45,8 @@
    - [Uglify](grunt/uglify.md)
 - Node
    - [Install](node/install.md)
+- SASS
+   - [Utils](sass/utils.md)
 - Syntax
    - [Alias](syntax/alias.md)
    - [Iife](syntax/iife.md)
