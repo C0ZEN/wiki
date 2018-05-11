@@ -158,7 +158,7 @@ Create a @ViewChild.
 Create an from event observable.
 
 ```javascript
-private scrollEvent: Observable;
+private scrollEvent: Subscription;
 public ngAfterViewInit(): void {
   this.scrollEvent = fromEvent(this.overflowContent.nativeElement, 'scroll').subscribe(() => {
     // Do your stuff here
