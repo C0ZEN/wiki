@@ -138,3 +138,29 @@ Called after the ngAfterViewInit and every subsequent ngAfterContentChecked().
 Cleanup just before Angular destroys the directive/component.  
 Unsubscribe Observables and detach event handlers to avoid memory leaks.  
 Called just before Angular destroys the directive/component.
+
+## Watch event on specific element
+
+Let's take for example the scroll event.
+
+Create a reference variable.
+
+```html
+<div #overflowContent></div>
+```
+
+Create a @ViewChild.
+
+```javascript
+@ViewChild('overflowContent') public overflowContent: ElementRef;
+```
+
+Create an from event observable.
+
+```javascript
+public ngAfterViewInit(): void {
+  this.scrollEvent = fromEvent(this.overflowContent.nativeElement, 'scroll').subscribe(() => {
+    // Do your stuff here
+  });
+}
+```
