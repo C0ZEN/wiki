@@ -82,3 +82,14 @@ it('should emit', () => {
   expect(hasSubscribe).toBe(true);
 });
 ```
+
+## How to test Observable data
+
+Store the observable in a const and then subscribe to it to eval the callback when the next change.
+
+```javascript
+it('should equal...', fakeAsync(() => {
+  const observable: Observable<number> = numberService.getNumber();
+  observable.subscribe((number: number) => expect(number).toBe(1));
+}));
+```
