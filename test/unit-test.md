@@ -104,3 +104,15 @@ it('should call the fn with 1 and then 2', () => {
   expect(fnSpy.calls.allArgs()).toEqual([[1], [2]]);
 });
 ```
+
+## How to test .toHaveBeenCalledWith() when the param is a function
+
+Instead of passing a real function, or even a noop, you can pass a jasmine type.  
+The solution is then `jasmine.any(Function)`.
+
+```javascript
+it('should call login() with a callback', () => {
+  spyOn(loginService, 'login');
+  expect(loginService.login).toHaveBeenCalledWith(jasmine.any(Function));
+});
+```
