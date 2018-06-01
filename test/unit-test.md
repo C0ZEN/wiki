@@ -93,3 +93,14 @@ it('should equal...', fakeAsync(() => {
   observable.subscribe((number: number) => expect(number).toBe(1));
 }));
 ```
+
+## How to test a function which is called multiple times with params
+
+Save the function as a spy and use the calls args to get all the data in one shot.
+
+```javascript
+it('should call the fn with 1 and then 2', () => {
+  const fnSpy: Spy = spyOn(service, 'fn');
+  expect(fnSpy.calls.allArgs()).toEqual([[1], [2]]);
+});
+```
