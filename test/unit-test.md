@@ -116,3 +116,15 @@ it('should call login() with a callback', () => {
   expect(loginService.login).toHaveBeenCalledWith(jasmine.any(Function));
 });
 ```
+
+## How to test the call of an internal method in a service's constructor
+
+Use the prototype of the service.
+
+```javascript
+it('constructor() should call init()', () => {
+  spyOn(AdmFwkKeyboardService.prototype, 'init');
+  const newService: AdmFwkKeyboardService = new AdmFwkKeyboardService(logService);
+  expect(AdmFwkKeyboardService.prototype.init).toHaveBeenCalled();
+});
+```
